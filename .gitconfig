@@ -1,0 +1,8 @@
+[user]
+	name = jjozwiak
+	email = jason.jozwiak@gmail.com
+[core]
+	compression = 9
+	excludesfile = /home/jjozwiak/.gitignore_global
+[push]
+	default = matching
