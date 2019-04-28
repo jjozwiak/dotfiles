@@ -21,3 +21,12 @@ alias hsssh="cd ~/Homestead; sudo vagrant ssh"
 # Open PHPStorm
 alias phpstorm="cd /opt/PHPStorm/bin; ./phpstorm.sh"
 
+# ls Deluxe
+alias ls="lsd"
+alias l="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+alias lt="ls --tree"
+
+# misc
+alias c="clear"

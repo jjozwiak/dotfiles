@@ -8,10 +8,17 @@ set backspace=indent,eol,start  "enable backspace to delete"
 let mapleader = ','             "change default leader key from \ to ,
 set number
 set linespace=15
-set tabstop=8
 set expandtab
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
+set laststatus=2
+set complete=.,w,b,u            "set autocomplete matching"
+set autowriteall                "automatically write when switching buffers"
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
 "----------------- Visuals----------------"
 
@@ -53,12 +60,15 @@ nmap <leader>lm :e app/<cr>
 
 "----------------- Plugins --------------"
 
-"/
-"/ CtrlP
-"/
+"/ CtrlP "
 let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max30,results:30'
 
+"emmet"
+let g:user_emmet_leader_key=','
+
+"move lines up or down"
+let g:move_key_modifier='S'
 
 "Automatically source .vimrc on save"
 augroup autosourcing
@@ -71,6 +81,7 @@ augroup END
 
 "----------------- Notes --------------"
 
+" ,nt to launch NerdTree
 " Press n after a search with / to go to the next occurence
 " Press yy to copy or 'yank' and p to paste
 " Press gg to go directly to the top of a file
@@ -93,3 +104,5 @@ augroup END
 " type :tp to go to prev in list
 " type Ctrl ] while cursor is on a method to navigate to declaration of method
 " type Ag '<search term> to do a ack or grep like search
+" type zc to fold codeblock
+" type zo to open folded codeblock

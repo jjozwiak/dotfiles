@@ -87,9 +87,17 @@ export ANDROID_HOME=/home/jjozwiak/Android/Sdk
 export PATH="/home/jjozwiak/.composer/vendor/bin:$PATH"
 export PATH="/home/jjozwiak/Android/Sdk/tools:$PATH"
 export PATH="/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin:$PATH"
+export PATH="/home/jjozwiak/development/flutter/bin:$PATH"
+export PATH="/home/jjozwiak/.local/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
 
 # added by travis gem
 -f /home/jjozwiak/.travis/travis.sh ] && source /home/jjozwiak/.travis/travis.sh
 export PATH=$HOME/bin:$PATH
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 source $HOME/.aliases
