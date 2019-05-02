@@ -22,7 +22,7 @@ set foldlevel=2
 
 "----------------- Visuals----------------"
 
-colorscheme atom-dark-256
+" colorscheme atom-dark-256
 
 "----------------- Split Management ------"
 
@@ -69,6 +69,9 @@ let g:user_emmet_leader_key=','
 
 "move lines up or down"
 let g:move_key_modifier='S'
+
+"NERDTree"
+let NERDTreeShowHidden=1
 
 "Automatically source .vimrc on save"
 augroup autosourcing
